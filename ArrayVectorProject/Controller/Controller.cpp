@@ -8,11 +8,6 @@
 
 #include "Controller.hpp"
 
-void Output
-{
-    
-}
-
 void Controller :: start()
 {
     vector<int> intVec;
@@ -25,4 +20,20 @@ void Controller :: start()
     stringVec.push_back("String One");
     stringVec.push_back("String Two");
     stringVec.push_back("I am very creative.");
+    
+    string stringArr[3];
+    copy( stringVec.begin(), stringVec.end(), stringArr );
+    
+    for (int item : intVec)
+    {
+        cout << item << endl;
+    }
+    for (string item : stringVec)
+    {
+        cout << item << endl;
+    }
+    for (string item : stringArr)
+    {
+        cout << item << endl;
+    }
 }
